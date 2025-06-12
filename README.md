@@ -16,8 +16,8 @@ Incluye herramientas para el preprocesamiento de datos crudos, detección de eve
 | `resample_tracking_anymaze.m`     | Reinterpolación del tracking exportado desde AnyMaze a una frecuencia deseada.     |
 | `tag_neuronas_zscore_SO.m`        | Clasifica neuronas en selectivas a estímulo Social, Objeto o No selectivas.        |
 | `funcion_intervalos.m`            | Genera intervalos de interés a partir de la posición del animal en la pista.       |
-| `LT_Reescalar.m`                  | Reescala coordenadas del trayecto lineal para facilitar análisis normalizados.     |
-| `calculo_intervalos_SO.m`         | Calcula intervalos de interacción con los estímulos Social y Objeto.               |
+| `LT_Reescalar.m`                  | Reescala coordenadas del trayecto lineal para facilitar análisis posteriores.      |
+| `calculo_intervalos_SO.m`         | Calcula intervalos de permanencia y corrida en extremos Social y Objeto.           |
 | `generador_sesion_plantilla.m`    | Crea una plantilla `.mat` con variables organizadas para análisis posteriores.     |
 
 ---
