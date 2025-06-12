@@ -1,19 +1,56 @@
-# LT_SO_Behavior_Ephys_Analysis
+# 🧠 Análisis de comportamiento y actividad neuronal — Linear Track + Social-Objeto (SO)
 
-This repository contains MATLAB scripts and documentation for the analysis of behavioral and electrophysiological data obtained from a Linear Track (LT) test used in a Social-Object (SO) discrimination paradigm. The project aims to explore social coding impairments in a schizophrenia model (Belforte et al., 2010).
+Este repositorio contiene funciones y scripts para el procesamiento, sincronización y análisis de sesiones experimentales en ratones, realizadas en un laberinto lineal (*Linear Track*) con exposición a estímulos sociales y de objeto (**SO**) en los extremos.
 
-## Key Features
+Incluye herramientas para el preprocesamiento de datos crudos, detección de eventos TTL, alineamiento de señales, etiquetado de neuronas y estructuración de sesiones.
 
-- Behavioral tracking and analysis of social vs object interactions.
-- Preprocessing and spectral analysis of LFP (Local Field Potential) signals.
-- Integration of neural and behavioral data for advanced interpretation.
-- Designed to support reproducibility and clarity in research pipelines.
+---
 
-## Technologies Used
+## ⚙️ Funciones incluidas
 
-- MATLAB (compatible with R2017a)
-- Custom-built scripts for signal processing and behavioral metrics
+| Script                             | Descripción breve                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------------|
+| `convertir_clu_res_a_txt.m`       | Convierte archivos `.clu` y `.res` de Klusters a formato de texto exportable       |
+| `convertir_rhd_a_dat.m`           | Extrae señales desde archivos `.rhd` de Intan y los guarda en formato `.dat`.      |
+| `detectar_TTL_openmv.m`           | Detecta pulsos TTL de sincronización entre OpenMV y el sistema de adquisición.     |
+| `resample_tracking_anymaze.m`     | Reinterpolación del tracking exportado desde AnyMaze a una frecuencia deseada.     |
+| `tag_neuronas_zscore_SO.m`        | Clasifica neuronas en selectivas a estímulo Social, Objeto o No selectivas.        |
+| `funcion_intervalos.m`            | Genera intervalos de interés a partir de la posición del animal en la pista.       |
+| `LT_Reescalar.m`                  | Reescala coordenadas del trayecto lineal para facilitar análisis normalizados.     |
+| `calculo_intervalos_SO.m`         | Calcula intervalos de interacción con los estímulos Social y Objeto.               |
+| `generador_sesion_plantilla.m`    | Crea una plantilla `.mat` con variables organizadas para análisis posteriores.     |
 
-## Use Cases
+---
 
-This project is suitable for researchers and analysts working at the intersection of neuroscience, behavior, and data science, and serves as a portfolio example for roles in Data Analytics and Data Science.
+## 📌 Aplicación
+
+Estas herramientas están diseñadas para ser usadas en tareas del tipo **Social–Objeto (SO)** realizadas en un **Linear Track**, con datos provenientes de:
+
+- Adquisición de señales electrofisiologicas in-vivo con Tetrodos (Intan RHD2132)
+- Spike sorting con **Neurosuite** (https://neurosuite.sourceforge.net/)
+- Tracking con **ANY-maze v4.98 4**
+- Sincronización por pulsos TTL (OpenMV Cam7, OpenMV IDE v4.0.1)
+
+- Este analisis fue utilizado en el trabajo de tesis doctoral:
+  *Gonzalez Sanabria, Javier Alberto. (2023). Rol de la corteza prefrontal medial en la codificación de información contextual en un modelo murino de esquizofrenia.* (Tesis Doctoral. Universidad de Buenos Aires. Facultad de Ciencias Exactas y Naturales.). Recuperado de https://hdl.handle.net/20.500.12110/tesis_n7442_GonzalezSanabria
+
+---
+
+## 🧪 Requisitos
+
+- MATLAB R2017a
+
+---
+
+## 👨‍🔬 Autor
+
+**Javier Gonzalez Sanabria, PhD**  
+*IFIBIO Houssay (UBA-CONICET), FMED, UBA*  
+Desarrollado en colaboración con **Maria Florencia Santos**  
+Contacto: javiergs89@gmail.com
+
+---
+
+## 📃 Licencia
+
+Este código se distribuye con fines académicos y de investigación. Para otros usos, por favor contactar al autor.
