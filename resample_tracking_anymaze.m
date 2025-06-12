@@ -1,7 +1,7 @@
 %% resample_tracking_anymaze.m
 %--------------------------------------------------------------------------
 % resample_tracking_anymaze - Reprocesa y resamplea los datos de tracking 
-% obtenidos con ANYMAZE a partir de videos grabados con la c·mara OpenMV M7.
+% obtenidos con ANYMAZE a partir de videos grabados con la c√°mara OpenMV M7.
 %
 % Esta rutina permite convertir archivos de tracking exportados en formato 
 % Excel (.xlsx) desde ANYMAZE en un formato compatible para ser utilizado 
@@ -12,7 +12,7 @@
 %   - Carga archivos .xlsx generados por ANYMAZE con los datos de tracking.
 %   - Permite realizar un resample temporal (ajustar frecuencia de muestreo).
 %   - Exporta los resultados a formato .txt (para NeuroExplorer) o a nuevos 
-%     archivos .mat/.m para an·lisis posterior en MATLAB.
+%     archivos .mat/.m para an√°lisis posterior en MATLAB.
 %
 % INPUT:
 %   - Archivos .xlsx con tracking exportado desde ANYMAZE.
@@ -22,8 +22,8 @@
 %   - Opcional: planillas .mat o scripts .m con las variables de tracking resampleadas.
 %
 % NOTAS:
-%   - Asegurarse de que el archivo .xlsx tenga el formato est·ndar exportado por ANYMAZE.
-%   - La tasa de resampleo puede ajustarse manualmente dentro del cÛdigo seg˙n necesidad.
+%   - Asegurarse de que el archivo .xlsx tenga el formato est√°ndar exportado por ANYMAZE.
+%   - La tasa de resampleo puede ajustarse manualmente dentro del c√≥digo seg√∫n necesidad.
 %
 % AUTOR:
 %   Javier Gonzalez Sanabria, PhD  
@@ -36,7 +36,7 @@ close all
 
 % Ubicar el directorio de la sesion donde se encuentran los .XLSX
 
-[file, myPath] = uigetfile('D:\JGS\DATOS','Seleccione archivos *.xlsx', '*.xlsx');
+[file, myPath] = uigetfile('','Seleccione archivos *.xlsx', '*.xlsx');
 
 length_protocol = input('LT (2) o SO (3)? ');
 
