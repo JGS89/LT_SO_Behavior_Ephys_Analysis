@@ -19,6 +19,7 @@ Incluye herramientas para el preprocesamiento de datos crudos, detección de eve
 | `LT_Reescalar.m`                  | Reescala coordenadas del trayecto lineal para facilitar análisis posteriores.      |
 | `calculo_intervalos_SO.m`         | Calcula intervalos de permanencia y corrida en extremos Social y Objeto.           |
 | `generador_sesion_plantilla.m`    | Crea una plantilla `.mat` con variables organizadas para análisis posteriores.     |
+| `LT_zscore_generator_9bins.m`     | Divide el LT en 9 bines y calcula el FR norm (Z score) para cada neurona.          |
 
 ---
 
