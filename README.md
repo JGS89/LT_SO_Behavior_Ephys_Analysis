@@ -31,6 +31,8 @@ Estas herramientas están diseñadas para ser usadas en tareas del tipo **Social
 - Tracking con **ANY-maze v4.98 4**
 - Sincronización por pulsos TTL (OpenMV Cam7, OpenMV IDE v4.0.1)
 
+![LT y SO - 1](https://github.com/user-attachments/assets/40aad0ca-fdbb-444b-97d5-7f8728f59be1)
+
 - Este analisis fue utilizado en el trabajo de tesis doctoral:
   *Gonzalez Sanabria, Javier Alberto. (2023). Rol de la corteza prefrontal medial en la codificación de información contextual en un modelo murino de esquizofrenia.* (Tesis Doctoral. Universidad de Buenos Aires. Facultad de Ciencias Exactas y Naturales.). Recuperado de https://hdl.handle.net/20.500.12110/tesis_n7442_GonzalezSanabria
 
